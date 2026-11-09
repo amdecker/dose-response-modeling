@@ -1,0 +1,33 @@
+{
+  "model": "linear",
+  "dose_limit": "0.125",
+  "settings": {
+    "num_warmup": 1000,
+    "num_samples": 2500,
+    "num_chains": 4,
+    "num_trees": 200,
+    "random_seed": 0
+  },
+  "deaths_below": 8504.0,
+  "rows_below": 21812,
+  "person_years_below": 2684840.3532499997,
+  "beta_low": {
+    "mean": 0.18704645335674286,
+    "median": 0.17052674293518066,
+    "ci_lower": -0.38084518909454346,
+    "ci_upper": 0.8156590461730957,
+    "prob_positive": 0.7238
+  },
+  "beta_high": {
+    "mean": 0.4198927879333496,
+    "median": 0.4191783666610718,
+    "ci_lower": 0.3228670358657837,
+    "ci_upper": 0.5214239358901978,
+    "prob_positive": 1.0
+  },
+  "convergence": {
+    "max r_hat": "1.002",
+    "min bulk ESS": "2520",
+    "divergences": 39
+  }
+}

@@ -1,0 +1,25 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# SLURM logs
+logs/
+slurm-*.out
+
+# Editor and tool settings
+.idea/
+.claude/
+.mcp.json
+
+paper/*
+!paper/main.pdf
+!paper/main.tex
+!paper/assets
+!paper/references.bib
