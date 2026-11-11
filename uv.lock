@@ -1,5 +1,5 @@
 version = 1
-revision = 2
+revision = 3
 requires-python = "==3.13.*"
 
 [[package]]
@@ -321,6 +321,69 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/d0/f5/c2b3e8260388d7b76bc4e5a3a29648a0ca47dca6a2721d6549ff2d944eee/debugpy-1.8.22-cp313-cp313-win_amd64.whl", hash = "sha256:f49b1d6cecf326b63c06d7f517e4a6642777f758c58cb799e7bc5a6dd74721c2", size = 5400362, upload-time = "2026-09-15T21:44:30.857Z" },
     { url = "https://files.pythonhosted.org/packages/56/3d/c7dc9f35bc9e22cdb53679f844bee40fd5cff871862f60595869a433400d/debugpy-1.8.22-py2.py3-none-any.whl", hash = "sha256:a9e9d3550e15ca479c59333e90845029190531f0cacfedab3b815a57bd913947", size = 5374857, upload-time = "2026-09-15T21:44:54.454Z" },
 ]
+
+[[package]]
+name = "dose-response-modeling"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "arviz" },
+    { name = "blackjax" },
+    { name = "folium" },
+    { name = "gplearn" },
+    { name = "graphviz" },
+    { name = "h5py" },
+    { name = "ipykernel" },
+    { name = "ipywidgets" },
+    { name = "jax" },
+    { name = "matplotlib" },
+    { name = "numpy" },
+    { name = "numpyro" },
+    { name = "pandas" },
+    { name = "pymc" },
+    { name = "pymc-bart" },
+    { name = "pytensor" },
+    { name = "scienceplots" },
+    { name = "scikit-learn" },
+    { name = "scipy" },
+    { name = "statsmodels" },
+    { name = "sympy" },
+    { name = "xarray" },
+]
+
+[package.dev-dependencies]
+dev = [
+    { name = "ruff" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "arviz", specifier = "==0.22.0" },
+    { name = "blackjax", specifier = "==1.2.5" },
+    { name = "folium", specifier = "==0.20.0" },
+    { name = "gplearn", specifier = "==0.4.2" },
+    { name = "graphviz", specifier = "==0.21" },
+    { name = "h5py", specifier = "==3.16.0" },
+    { name = "ipykernel", specifier = "==6.30.1" },
+    { name = "ipywidgets", specifier = "==8.1.7" },
+    { name = "jax", specifier = "==0.7.2" },
+    { name = "matplotlib", specifier = "==3.10.6" },
+    { name = "numpy", specifier = "==2.2.6" },
+    { name = "numpyro", specifier = "==0.19.0" },
+    { name = "pandas", specifier = "==2.3.2" },
+    { name = "pymc", specifier = "==5.25.1" },
+    { name = "pymc-bart", specifier = "==0.11.0" },
+    { name = "pytensor", specifier = "==2.31.7" },
+    { name = "scienceplots", specifier = "==2.1.1" },
+    { name = "scikit-learn", specifier = "==1.6.1" },
+    { name = "scipy", specifier = "==1.15.3" },
+    { name = "statsmodels", specifier = "==0.15.0" },
+    { name = "sympy", specifier = "==1.14.0" },
+    { name = "xarray", specifier = "==2026.9.0" },
+]
+
+[package.metadata.requires-dev]
+dev = [{ name = "ruff", specifier = "==0.14.5" }]
 
 [[package]]
 name = "etuples"
@@ -824,69 +887,6 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/d5/17/894321d44cf94fa5cf921eff4e7ff24c7732c3d702236d40d6055b68a693/llvmlite-0.50.0-cp313-cp313-win_amd64.whl", hash = "sha256:266a6a29be71c3e3a22960ddcedf66b4e0388e5abb6cc4991cc093d6df402ad7", size = 41865552, upload-time = "2026-09-29T18:43:29.755Z" },
     { url = "https://files.pythonhosted.org/packages/b1/d7/c3c3a70f057c18313515af3bd970c1faa348121e2545d6074f22011feca9/llvmlite-0.50.0-cp313-cp313-win_arm64.whl", hash = "sha256:1cb21c420a47dcfa56223228d013c6f9d234e05e06e6819a41638d78bbd78e6c", size = 37441843, upload-time = "2026-09-29T18:43:33.292Z" },
 ]
-
-[[package]]
-name = "lnt"
-version = "0.1.0"
-source = { virtual = "." }
-dependencies = [
-    { name = "arviz" },
-    { name = "blackjax" },
-    { name = "folium" },
-    { name = "gplearn" },
-    { name = "graphviz" },
-    { name = "h5py" },
-    { name = "ipykernel" },
-    { name = "ipywidgets" },
-    { name = "jax" },
-    { name = "matplotlib" },
-    { name = "numpy" },
-    { name = "numpyro" },
-    { name = "pandas" },
-    { name = "pymc" },
-    { name = "pymc-bart" },
-    { name = "pytensor" },
-    { name = "scienceplots" },
-    { name = "scikit-learn" },
-    { name = "scipy" },
-    { name = "statsmodels" },
-    { name = "sympy" },
-    { name = "xarray" },
-]
-
-[package.dev-dependencies]
-dev = [
-    { name = "ruff" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "arviz", specifier = "==0.22.0" },
-    { name = "blackjax", specifier = "==1.2.5" },
-    { name = "folium", specifier = "==0.20.0" },
-    { name = "gplearn", specifier = "==0.4.2" },
-    { name = "graphviz", specifier = "==0.21" },
-    { name = "h5py", specifier = "==3.16.0" },
-    { name = "ipykernel", specifier = "==6.30.1" },
-    { name = "ipywidgets", specifier = "==8.1.7" },
-    { name = "jax", specifier = "==0.7.2" },
-    { name = "matplotlib", specifier = "==3.10.6" },
-    { name = "numpy", specifier = "==2.2.6" },
-    { name = "numpyro", specifier = "==0.19.0" },
-    { name = "pandas", specifier = "==2.3.2" },
-    { name = "pymc", specifier = "==5.25.1" },
-    { name = "pymc-bart", specifier = "==0.11.0" },
-    { name = "pytensor", specifier = "==2.31.7" },
-    { name = "scienceplots", specifier = "==2.1.1" },
-    { name = "scikit-learn", specifier = "==1.6.1" },
-    { name = "scipy", specifier = "==1.15.3" },
-    { name = "statsmodels", specifier = "==0.15.0" },
-    { name = "sympy", specifier = "==1.14.0" },
-    { name = "xarray", specifier = "==2026.9.0" },
-]
-
-[package.metadata.requires-dev]
-dev = [{ name = "ruff", specifier = "==0.14.5" }]
 
 [[package]]
 name = "logical-unification"
